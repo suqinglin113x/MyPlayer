@@ -12,6 +12,9 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
+@property(nonatomic, strong)NSArray *sidArray;
+@property(nonatomic, strong)NSArray *videoArray;
 
++ (AppDelegate *)shareAppDelegate;
 @end
 

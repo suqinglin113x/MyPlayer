@@ -1,0 +1,24 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "be73ea83-1ef3-4b60-8caa-c8a69a106ff0++9413" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "be73ea83-1ef3-4b60-8caa-c8a69a106ff0++9413" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C70BCCB7-97F7-46E7-9DCA-E75FC26520DF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "be73ea83-1ef3-4b60-8caa-c8a69a106ff0++9413" : "MyPlayer\/MyPlayer\/ThirdLib\/SDWebImage\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MyPlayer",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MyPlayer.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/www.svnchina.com\/svn\/finalversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "be73ea83-1ef3-4b60-8caa-c8a69a106ff0++9413"
+    }
+  ]
+}

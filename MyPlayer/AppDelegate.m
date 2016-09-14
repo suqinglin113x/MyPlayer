@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "RootTabBarController.h"
+
+
 
 @interface AppDelegate ()
 
@@ -16,7 +19,23 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    RootTabBarController *rootVC = [[RootTabBarController alloc] init];
+    self.window.rootViewController = rootVC;
+    [self.window makeKeyAndVisible];
+    
+    [[DataManage shareManager]getSidArrayWithURLString:@"http://c.m.163.com/nc/video/home/0-10.html" succecc:^(NSArray *sidArray, NSArray *videoArray) {
+        self.sidArray = [NSArray arrayWithArray:sidArray];
+        self.videoArray = [NSArray arrayWithArray:videoArray];
+    } failed:^(NSError *error) {
+        
+    }];
+    
+    
     return YES;
 }
 
@@ -42,4 +61,8 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
++ (AppDelegate *)shareAppDelegate
+{
+    return (AppDelegate *)[UIApplication sharedApplication].delegate;
+}
 @end
